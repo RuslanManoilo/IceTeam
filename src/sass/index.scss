@@ -1,6 +1,16 @@
 @import './common';
 @import './example';
 
+// Utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// Base
+@import './base/reset';
+@import './base/base';
+@import './base/container';
+
+// Components
 @import './layouts/hero-header';
 
 @import './layouts/products';
