@@ -133,6 +133,7 @@
   display: flex;
   gap: 8;
   z-index: 100;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 28px;
   }
@@ -201,18 +202,29 @@
 }
 
 .baner-text {
-  margin-left: 33px;
   width: 151px;
   font-size: 12px;
   line-height: calc(17 / 12);
   color: var(--main-txt-cl);
 
   @media screen and (min-width: 1200px) {
-    margin-left: 14px;
     width: 200px;
     font-size: 14px;
     line-height: calc(20 / 14);
   }
+}
+.baner-text-box {
+  position: relative;
+  margin-left: 33px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 14px;
+  }
+}
+.arrows-link {
+  position: absolute;
+  fill: var(--main-txt-cl);
+  top: 100%;
+  left: 0;
 }
 
 .counter {
@@ -255,6 +267,8 @@
     line-height: calc(17 / 14);
   }
 }
+//Images
+
 .img-dote {
   position: absolute;
   width: 100%;
@@ -272,19 +286,74 @@
   }
 }
 
-.img-icecream {
+.pic {
   position: absolute;
-
-  left: 50%;
 
   @media screen and (max-width: 767px) {
     bottom: -239px;
+    left: 28%;
   }
   @media screen and (min-width: 768px) {
     bottom: -13px;
+    left: 52%;
   }
 
   @media screen and (min-width: 1200px) {
     bottom: -65px;
+    left: 52%;
+  }
+}
+.icecream-green {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: scaley(1);
+
+  animation-name: scale;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.icecream-pink {
+  position: absolute;
+  top: 35%;
+  left: 47%;
+  transform: scaley(1);
+  animation-name: scale;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+.icecream-yellow {
+  position: absolute;
+  top: 20%;
+  left: 17%;
+
+  transform: scaley(1);
+  animation-name: scale;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes scale {
+  0% {
+    transform: scaley(1.5);
+  }
+  20% {
+    transform: scaley(1.3);
+  }
+  40% {
+    transform: scaley(1.5);
+  }
+  60% {
+    transform: scaley(1.3);
+  }
+  80% {
+    transform: scaley(1.5);
+  }
+
+  100% {
+    transform: scaley(1);
   }
 }
