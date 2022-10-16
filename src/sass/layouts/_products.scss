@@ -14,7 +14,7 @@
 .subtitle {
   margin-bottom: 12px;
 
-  font-family: 'Montserrat';
+  font-family: var(--main-font);
 
   font-weight: 800;
   font-size: 18px;
@@ -24,7 +24,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #131313;
+  color: var(--dark-txt-cl);
 
   @media screen and (min-width: 768px) {
     font-size: 22px;
@@ -39,7 +39,7 @@
 
 .title {
   margin-bottom: 40px;
-  font-family: 'Seymour One';
+  font-family: var(--secondary-font);
 
   font-weight: 400;
   font-size: 30px;
@@ -49,7 +49,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #131313;
+  color: var(--dark-txt-cl);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 80px;
@@ -62,5 +62,61 @@
     font-size: 36px;
     line-height: calc(45 / 36);
     letter-spacing: 0.06em;
+  }
+}
+
+.products__item--green {
+  background-color: var(--green-cl);
+}
+
+.products__item--yellow {
+  background-color: var(--yellow-cl);
+}
+
+.products__item--brown {
+  background-color: var(--brown-cl);
+}
+
+.products__title {
+  margin-bottom: 40px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--dark-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 65px;
+
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+}
+
+.products__desc {
+  font-family: var(--main-font);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(25 / 14);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--dark-txt-cl);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(28 / 16);
   }
 }
