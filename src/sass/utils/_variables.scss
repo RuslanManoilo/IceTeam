@@ -1,23 +1,23 @@
 :root {
-    /* Fonts */
-    --main-font: 'Montserrat', sans-serif;
-    --secondary-font: 'Seymour One', sans-serif;
+  /* Fonts */
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
 
-    /* Text colors */
-    --main-txt-cl: #FCFCFC;
-    --accent-txt-cl: #F8D24E;
-    --dark-txt-cl: #131313;
-    --gray-txt-cl: #ABABAB;
+  /* Text colors */
+  --main-txt-cl: #fcfcfc;
+  --accent-txt-cl: #f8d24e;
+  --dark-txt-cl: #131313;
+  --gray-txt-cl: #ababab;
 
-    /* BG colors */
-    --main-bg-cl: #84A178;
-    --light-cl: #ffffff;
+  /* BG colors */
+  --main-bg-cl: #84a178;
+  --light-cl: #ffffff;
+  --light-grey-cl: #e1e1e1;
 
-    /* Others */
-    --brown-cl: #D6936D;
-    --grey-cl: #7A7A7A;
-    --time-grey-cl: #907e82;
+  /* Others */
+  --brown-cl: #d6936d;
+  --grey-cl: #7a7a7a;
+  --time-grey-cl: #907e82;
 
-
-    --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
