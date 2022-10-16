@@ -1,10 +1,10 @@
-.about{
+.about {
     background-color: var(--main-bg-cl);
     padding: 60 0;
     margin-left: auto;
     margin-right: auto;
 
-    &__label{
+    &__label {
         font-weight: 700;
         font-size: 18px;
         line-height: 1.22;
@@ -17,7 +17,7 @@
 
     }
 
-    &__title{
+    &__title {
         font-family: var(--secondary-font);
         font-size: 30px;
         line-height: 1.27;
@@ -38,30 +38,30 @@
         margin-right: auto;
     }
 
-    &__text{
+    &__text {
         line-height: 1.75;
         text-align: center;
         letter-spacing: 0.04em;
         margin-left: 50px;
         margin-right: 50px;
     }
-    
-    &__text:not(first-child){
+
+    &__text:not(first-child) {
         margin-top: 3px;
     }
 
-    &__text--hidden{
+    &__text--hidden {
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 768px) {
             display: none;
         }
-        }
-    
-    &__text-box{
+    }
+
+    &__text-box {
         margin-bottom: 20px;
     }
 
-    &__btn{
+    &__btn {
         display: block;
         padding: 12 34;
         background-color: var(--accent-txt-cl);
@@ -72,7 +72,7 @@
     }
 }
 
-.yellow-circle{
+.yellow-circle {
     position: relative;
     display: block;
     width: 278px;
