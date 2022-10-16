@@ -97,6 +97,7 @@
     padding-top: 45px;
     padding-bottom: 65px;
   }
+  outline: 2px solid tomato;
 }
 
 .container-hero {
@@ -131,7 +132,10 @@
 .hero-list {
   display: flex;
   gap: 8;
-  margin-bottom: 28px;
+  z-index: 100;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
   @media screen and (min-width: 1200px) {
     gap: 34;
     margin-bottom: 42px;
@@ -192,6 +196,9 @@
     display: none;
   }
 }
+.baner-img {
+  z-index: 10;
+}
 
 .baner-text {
   margin-left: 33px;
@@ -246,5 +253,38 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(17 / 14);
+  }
+}
+.img-dote {
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  @media screen and (max-width: 767px) {
+    bottom: -239px;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: -13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: -65px;
+  }
+}
+
+.img-icecream {
+  position: absolute;
+
+  left: 50%;
+
+  @media screen and (max-width: 767px) {
+    bottom: -239px;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: -13px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: -65px;
   }
 }

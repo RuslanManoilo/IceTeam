@@ -1,112 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header-container">
-        <a href="./index.html" class="logo">
-          <img
-            srcset="
-              ./images/Header/mobile-logo-41.png  41w,
-              ./images/Header/tablet-logo-48.png  48w,
-              ./images/Header/desktop-logo-60.png 60w
-            "
-            sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, 41px"
-            src="./images/Header/mobile-logo-41.png"
-            alt="Logo"
-          />
-        </a>
-        <nav>
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-link" href="#">Home</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="#how-made">How it’s made?</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="#products">Our products</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+<header class="header">
+  <div class="container header-container">
+    <a href="./index.html" class="logo">
+      <img
+        srcset="
+          ./images/Header/mobile-logo-41.png  41w,
+          ./images/Header/tablet-logo-48.png  48w,
+          ./images/Header/desktop-logo-60.png 60w
+        "
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, 41px"
+        src="./images/Header/mobile-logo-41.png"
+        alt="Logo"
+      />
+    </a>
+    <nav>
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link" href="#">Home</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#how-made">How it’s made?</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#products">Our products</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-        <button
-          class="menu-btn js-open-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="32" height="32">
-            <use href="./images/sprite.svg#icon-burger"></use>
-          </svg>
-        </button>
-        <button class="btn-header" type="button">
-          Buy now
-          <span>
-            <svg class="btn-frame" width="12" height="12">
-              <use href="./images/sprite.svg#icon-btn-frame"></use>
-            </svg>
-          </span>
-        </button>
+    <button
+      class="menu-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="32">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button class="btn-header" type="button">
+      Buy now
+      <span>
+        <svg class="btn-frame" width="12" height="12">
+          <use href="./images/sprite.svg#icon-btn-frame"></use>
+        </svg>
+      </span>
+    </button>
+  </div>
+</header>
+<main>
+  <!-- hero -->
+
+  <section class="section-hero">
+    <div class="container container-hero">
+      <h1 class="hero-title">ice cream made with passion</h1>
+
+      <ul class="hero-list">
+        <li class="hero-item">
+          <a class="hero-link-btn" href="">Products</a>
+        </li>
+        <li class="hero-item">
+          <a class="hero-link" href="">How it’s made?</a>
+        </li>
+      </ul>
+
+      <div class="baner-box">
+        <img
+          class="baner-img"
+          srcset="
+            ./images/hero/plate-152.png 152w,
+            ./images/hero/plate-225.png 225w,
+            ./images/hero/plate-304.png 304w,
+            ./images/hero/plate-450.png 450w
+          "
+          sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px"
+          src="./images/hero/plate-152.png"
+          alt="table with ice cream"
+        />
+        <div class="baner-text-box"></div>
+        <p class="baner-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
       </div>
-    </header>
-    <main>
-      <!-- hero -->
+      <ul class="counter-list">
+        <li class="counter-item">
+          <p class="counter">16</p>
+          <p class="counter-title">cafes</p>
+        </li>
+        <li class="counter-item">
+          <p class="counter">23</p>
+          <p class="counter-title">food trucks</p>
+        </li>
+      </ul>
 
-      <section class="section-hero">
-        <div class="container container-hero">
-          <h1 class="hero-title">ice cream made with passion</h1>
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/dote-1200.png 1x,
+            ./images/hero/dote-2400.png 2x
+          "
+          type="image/png"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/hero/dote-767.png 1x, ./images/hero/dote-1534.png 2x"
+          type="image/png"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/hero/dote-328.png 1x, ./images/hero/dote-656.png 2x"
+          type="image/png"
+        />
+        <img
+          class="img-dote"
+          src="./images/hero/dote-328.png"
+          alt="dote"
+          width="328"
+          height="50"
+          loading="lazy"
+        />
+      </picture>
 
-          <ul class="hero-list">
-            <li class="hero-item">
-              <a class="hero-link-btn" href="">Products</a>
-            </li>
-            <li class="hero-item">
-              <a class="hero-link" href="">How it’s made?</a>
-            </li>
-          </ul>
-
-          <div class="baner-box">
-            <img
-              srcset="
-                ./images/hero/plate-152.png 152w,
-                ./images/hero/plate-225.png 225w,
-                ./images/hero/plate-304.png 304w,
-                ./images/hero/plate-450.png 450w
-              "
-              sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px"
-              src="./images/hero/plate-152.png"
-              alt="table with ice cream"
-            />
-            <div class="baner-text-box"></div>
-            <p class="baner-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et
-            </p>
-            <!-- <svg width="40" height="0">
-              <use href="./images/sprite.svg#icon-arrow"></use>
-            </svg> -->
-          </div>
-          <ul class="counter-list">
-            <li class="counter-item">
-              <p class="counter">16</p>
-              <p class="counter-title">cafes</p>
-            </li>
-            <li class="counter-item">
-              <p class="counter">23</p>
-              <p class="counter-title">food trucks</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-  </body>
-</html>
+      <!-- <img
+        class="img-icecream"
+        srcset="
+          ./images/Hero/main-pic/ice-170.png 170w,
+          ./images/Hero/main-pic/ice-270.png 270w,
+          ./images/Hero/main-pic/ice-340.png 340w,
+          ./images/Hero/main-pic/ice-484.png 484w,
+          ./images/Hero/main-pic/ice-540.png 540w,
+          ./images/Hero/main-pic/ice-968.png 968w
+        "
+        sizes="(min-width: 1200px) 484px, (min-width: 768px) 270px, (max-width: 767px) 170px"
+        src="./images/Hero/main-pic/ice-170.png"
+        alt="table with ice cream"
+      /> -->
+    </div>
+  </section>
+</main>
