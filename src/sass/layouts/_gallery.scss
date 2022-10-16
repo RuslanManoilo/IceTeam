@@ -1,6 +1,6 @@
 .gallery {
   height: 24px;
-  background: linear-gradient(#84a178, #84a178);
+  background: linear-gradient(var(--main-bg-cl), var(--main-bg-cl));
 
   @media screen and (min-width: 768px) {
     height: 164px;
