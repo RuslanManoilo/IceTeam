@@ -1,13 +1,14 @@
 .gallery {
-  height: 24px;
   background: linear-gradient(var(--main-bg-cl), var(--main-bg-cl));
+  background-repeat: no-repeat;
+  background-position-y: -106px;
 
   @media screen and (min-width: 768px) {
-    height: 164px;
+    background-position-y: -163px;
   }
 
   @media screen and (min-width: 1200px) {
-    height: 94px;
+    background-position-y: -328px;
   }
 }
 
