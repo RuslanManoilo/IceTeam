@@ -1,0 +1,26 @@
+.gallery {
+  height: 24px;
+  background: linear-gradient(var(--main-bg-cl), var(--main-bg-cl));
+
+  @media screen and (min-width: 768px) {
+    height: 164px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 94px;
+  }
+}
+
+.img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 7.4px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
+}
