@@ -9,7 +9,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: 0.3s all;
+  transition: opacity var(--anim);
 }
 
 .modal {
@@ -17,7 +17,7 @@
   visibility: hidden;
 
   width: 100%;
-  max-width: 500px;
+  max-width: 568px;
 
   position: fixed;
   top: 50%;
@@ -30,8 +30,9 @@
   padding: 30px;
   color: var(--dark-txt-cl);
   border-radius: 3px;
-  background-color: #fff;
-  transition: 0.3s all;
+  border-color: var(--accent-txt-cl);
+  background-color: var(--light-cl);
+  transition: opacity var(--anim);
 }
 
 .modal.active,
