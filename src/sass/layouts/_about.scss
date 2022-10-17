@@ -1,8 +1,20 @@
 .about {
     background-color: var(--main-bg-cl);
     padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 121px;
+        padding-right: 16px;
+    }
 
     &__label {
         font-weight: 700;
@@ -36,16 +48,14 @@
     }
 
     &__wrap {
+
         @media screen and (min-width: 768px) {
             display: flex;
-            padding-left: 32px;
-            padding-right: 32px;
-            justify-content: center;
         }
 
-        @media screen and (min-width: 1200px) {
-            padding-left: 16px;
-            padding-right: 121px;
+        @media screen and (min-width: 768px) and (min-width: 768px){
+            justify-content:center ;
+            display: flex;
         }
     }
 
@@ -99,33 +109,52 @@
     }
 
     &__text-box {
+
         @media screen and (min-width:768px) {
             max-width: 334px;
             margin-left: 32px;
         }
 
         @media screen and (min-width:1200px) {
+            padding-top: 90px;
             max-width: 463px;
             margin-left: 100px;
         }
     }
 
     &__btn {
-        display: block;
+        display: flex;
         padding: 12 34;
         color: #000000;
         background-color: var(--accent-txt-cl);
         border: none;
         border-radius: 10px;
         margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.3;
+        cursor: pointer;
+        align-items: center;
+       
 
         transition: color var(--anim), background-color var(--anim);
+
+        @media screen and (max-width:767px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width:768px) {
+            margin-top: 48px;
+        }
     }
 
     &__btn-icon{
-        fill: currentColor;
+        display: block;
+        margin-left: 5px;
+        fill: transparent;
+        stroke: var(--dark-txt-cl);
+        
     }
 
     &__btn:hover{
