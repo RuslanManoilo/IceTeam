@@ -29,6 +29,7 @@
       </ul>
     </nav>
 
+    <!-- <span class="span-btn-header"> -->
     <button
       class="menu-btn js-open-menu"
       type="button"
@@ -39,16 +40,63 @@
         <use href="./images/sprite.svg#icon-burger"></use>
       </svg>
     </button>
-    <button class="btn-header" type="button">
+    <button class="btn-header btn-adaptive" type="button">
       Buy now
-      <span>
-        <svg class="btn-frame" width="12" height="12">
+      <svg class="btn-frame" width="14" height="14">
+        <use href="./images/sprite.svg#icon-btn-frame"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- Модалка header-->
+
+  <div class="mobile-container js-menu-container" id="mobile-menu">
+    <button
+      class="mobile-menu-btn js-close-menu"
+      type="button"
+      data-modal-close
+    >
+      <svg width="32" height="32">
+        <use href="./images/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+
+    <img
+      class="logo-menu"
+      srcset="
+        ./images/header/mobile-logo-41.png 41w,
+        ./images/header/tablet-logo-48.png 48w
+      "
+      sizes="(min-width: 768px) 48px, 41px"
+      src="./images/Header/mobile-logo-41.png"
+      alt="Logo"
+    />
+
+    <ul class="modal-list">
+      <li class="modal-item">
+        <a class="modal-link" href="#">Home</a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href="#how-made">How it’s made?</a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href="#products">Our products</a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <button class="btn-header btn-modal" type="button">
+      Buy now
+      <span class="span-btn-header">
+        <svg class="btn-frame" width="15" height="15">
           <use href="./images/sprite.svg#icon-btn-frame"></use>
         </svg>
       </span>
     </button>
   </div>
 </header>
+
 <main>
   <!-- hero -->
 
@@ -194,3 +242,33 @@
     </div>
   </section>
 </main>
+<script>
+  (() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+
+    const toggleMenu = () => {
+      const isMenuOpen =
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+
+      const scrollLockMethod = !isMenuOpen
+        ? 'disableBodyScroll'
+        : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+    };
+
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+
+    // Close the mobile menu on wider screens if the device orientation changes
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+  })();
+</script>
