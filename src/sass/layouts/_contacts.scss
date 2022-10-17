@@ -173,6 +173,8 @@
   background-color: var(--accent-txt-cl);
   border: none;
 
+  transition: background-color var(--anim), color var(--anim);
+
   @media screen and (max-width: 767px) {
     margin-bottom: 16px;
   }
@@ -188,6 +190,8 @@
 .contacts__btn--franchise {
   background-color: transparent;
   border: 2px solid var(--accent-txt-cl);
+
+  transition: border var(--anim), color var(--anim);
 }
 .contacts__btn--franchise:hover {
   border: 2px solid var(--bg-green-cl);
@@ -200,4 +204,11 @@
 .contacts__icon {
   fill: transparent;
   stroke: var(--dark-txt-cl);
+
+  transition: stroke var(--anim);
+}
+
+.contacts__btn--locations:focus .contacts__icon,
+.contacts__btn--franchise:focus .contacts__icon {
+  stroke: var(--main-txt-cl);
 }
