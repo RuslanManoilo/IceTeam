@@ -1,87 +1,100 @@
 <!-- buy now modal -->
-<div class="modal" data-modal="1">
+<div class="modal container__buy-now" data-modal="1">
     <button data-modal-close type="button" class="modal__close-btn">
         <svg class="modal__close-icon" width="20" height="20">
         <use href="./images/sprite.svg#icon-close-cross"></use>
         </svg>
     </button>
-    <form class="buy-now__modal">
-        <strong class="buy-now__heading"
+    <form class="buy-now__modal" autocomplete="off">
+        <strong class="buy-now__heading heading"
         >Buy now</strong
         >
         <ul class="buy-now__goods-set">
             <li class="goods-set__item">
-                <div class="thumb">
-                    <img   srcset="./images/modals/ice-cream.jpg 1x,
-                  ./images/modals/ice-cream@2x.jpg 2x"
-                sizes="132px"
-                src="./images/modals/ice-cream.jpg"
-                alt="ice-cream"
-                width="132"
-                height="138">
-                    </div>
-                    <div class="goods-set__titlebox">
+                <label class="goods-set__label">
+                    <input class="goods-set__checkbox" name="buy-now-product" value="ice-cream" type="checkbox">
+                     <div class="goods-set__titlebox goods-set__titlebox--green">
                         <p class="goods-set__title">ice cream</p>
                     </div>
-                
-            </li>
-           <li class="goods-set__item">
-                <div class="thumb">
-                    <img   srcset="./images/modals/ice-coffee.jpg 1x,
-                  ./images/modals/ice-coffee@2x.jpg 2x"
-                sizes="132px"
-                src="./images/modals/ice-coffee.jpg"
-                alt="ice-coffee"
-                width="132"
-                height="138">
+                    <div class="thumb">                    
+                        <img class="goods-set__img"  srcset="./images/modals/ice-cream.webp 1x,
+                    ./images/modals/ice-cream@2x.webp 2x"
+                    sizes="132px"
+                    src="./images/modals/ice-cream.webp"
+                    alt="ice-cream"
+                    width="131"
+                    height="130">                    
                     </div>
-                    <div class="goods-set__titlebox">
-                        <p class="goods-set__title">ice cream</p>
-                    </div>
-                
+                    <div class="ellipse ellipse--green"></div>               
+                </label>
             </li>
             <li class="goods-set__item">
-                <div class="thumb">
-                    <img   srcset="./images/modals/milkshake.jpg 1x,
-                  ./images/modals/milkshake@2x.jpg 2x"
-                sizes="132px"
-                src="./images/modals/milkshake.jpg"
-                alt="milkshake"
-                width="132"
-                height="138">
+                <label class="goods-set__label">
+                        <input class="goods-set__checkbox" name="buy-now-product" value="ice-coffee" type="checkbox">
+                        <div class="goods-set__titlebox goods-set__titlebox--yellow">
+                            <p class="goods-set__title">ice coffee</p>
+                        </div>
+                    <div class="thumb">
+                        <img   srcset="./images/modals/ice-coffee.webp 1x,
+                    ./images/modals/ice-coffee@2x.webp 2x"
+                    sizes="132px"
+                    src="./images/modals/ice-coffee.webp"
+                    alt="ice-coffee"
+                    width="132"
+                    height="138">
                     </div>
-                    <div class="goods-set__titlebox">
-                        <p class="goods-set__title">ice cream</p>
+                    <div class="ellipse ellipse--yellow"></div>
+                </label> 
+            </li>
+            <li class="goods-set__item">
+                <label class="goods-set__label">
+                    <input class="goods-set__checkbox" name="buy-now-product" value="milkshake" type="checkbox">
+                        <div class="goods-set__titlebox goods-set__titlebox--brown">
+                        <p class="goods-set__title">milkshake</p>
                     </div>
-                
+                    <div class="thumb">
+                        <img   srcset="./images/modals/milkshake.webp 1x,
+                    ./images/modals/milkshake@2x.webp 2x"
+                    sizes="132px"
+                    src="./images/modals/milkshake.webp"
+                    alt="milkshake"
+                    width="132"
+                    height="138">
+                        </div>
+                        <div class="ellipse ellipse--brown"></div>
+                    
+                 </label>  
             </li>
         </ul>
 
         <label class="buy-now__label">
-            <span class="buy-now__title">Name</span>
+            
             <input
               class="buy-now__input"
               type="text"
               required
-              name="buy-now-name"
-            />           
+              name=" "
+              placeholder="Name"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space."
+            />            
           </label>
             <label class="buy-now__label">
-            <span class="buy-now__title">Phone</span>
+                
             <input
               class="buy-now__input"
               type="tel"
               required
               name="buy-now-phone"
+              placeholder="Phone"
+              pattern="\+?[0-9\s\-\(\)]+" title="Userphone must include [0-9] numbers."
             />          
           </label>
-            <label class="buy-now__label">
-            <span class="buy-now__title">Comment</span>
+            <label class="buy-now__label buy-now__label--mb">
             <textarea
               class="buy-now__comment"
               name="buy-now-comment"
               rows="7"
-              placeholder="Enter text"
+              placeholder="Comment"
             ></textarea>
           </label>
            <button class="buy-now__btn" type="submit">
@@ -97,14 +110,14 @@
         </svg>
     </button>
     <form class="ingradients__modal">
-        <strong class="buy-now__heading"
+        <strong class="buy-now__heading heading"
         >Chololate icecream</strong
         >
         <div class="thumb">
-           <img   srcset="./images/modals/choco.jpg 1x,
-                  ./images/modals/choco@2x.jpg 2x"
+           <img   srcset="./images/modals/choco.webp 1x,
+                  ./images/modals/choco@2x.webp 2x"
                 sizes="132px"
-                src="./images/modals/choco.jpg"
+                src="./images/modals/choco.webp"
                 alt="chocolate icecream"
                 width="132"
                 height="138">
@@ -194,7 +207,7 @@
         <use href="./images/sprite.svg#icon-close-cross"></use>
         </svg>
     </button>
-      <strong class="read-more__heading">How it’s made?</strong>
+      <strong class="read-more__heading heading">How it’s made?</strong>
       <iframe width="448" height="205" src="https://www.youtube.com/embed/jHuGLNlET3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="read-more__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
     </div>
@@ -205,7 +218,7 @@
         <use href="./images/sprite.svg#icon-close-cross"></use>
         </svg>
     </button>
-    <strong class="map__heading">Our Locations</strong>
+    <strong class="map__heading heading">Our Locations</strong>
      <img   srcset="./images/modals/map.jpg 1x,
                   ./images/modals/map@2x.jpg 2x"
                 sizes="448px"
@@ -222,7 +235,7 @@
         <use href="./images/sprite.svg#icon-close-cross"></use>
         </svg>
     </button>
-    <strong class="franchise__heading">Thank you for your interest in owning an Ice Cream shop</strong>
+    <strong class="franchise__heading heading">Thank you for your interest in owning an Ice Cream shop</strong>
     <p>Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
      <label class="franchise__label">
             <span class="franchise__title">Name</span>
