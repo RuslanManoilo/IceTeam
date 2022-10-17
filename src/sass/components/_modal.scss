@@ -11,17 +11,18 @@
 //   z-index: 20;
 //   transition: opacity var(--anim);
 // }
-.container {
+.container__buy-now {
   max-width: 280px;
-  @media screen and (min-width: 768px) {
-    max-width: 568px;
-  }
-
+  padding: 32px;
   border-radius: 10px;
   border: 2px solid var(--accent-txt-cl);
   background-color: var(--light-cl);
-}
 
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    padding: 32px 54px;
+  }
+}
 .modal {
   //   opacity: 0;
   //   visibility: hidden;
