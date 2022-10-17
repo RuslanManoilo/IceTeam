@@ -81,12 +81,17 @@
   padding-bottom: 20px;
   border-radius: 24px;
   text-align: center;
-
-  &:not(:last-child) {
-    margin-bottom: 56px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 56px;
+    }
   }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 32px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 64px) / 3);
   }
 }
 .products__item--green {
@@ -133,13 +138,22 @@
     background-image: url(../images/products/cream_sm-@2x.png);
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     background-image: url(../images/products/cream_md-@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/products/cream_md-@2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/cream_lg-@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/cream_lg-@2x.png);
     }
   }
 }
@@ -156,13 +170,22 @@
     background-image: url(../images/products/coffee_sm-@2x.png);
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     background-image: url(../images/products/coffee_md-@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/products/coffee_md-@2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/coffee_lg-@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/coffee_lg-@2x.png);
     }
   }
 }
@@ -176,15 +199,24 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/products/milkshakes_sm-@1x.png);
+    background-image: url(../images/products/milkshakes_sm-@2x.png);
   }
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/products/coffee_md-@1x.png);
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/products/milkshakes_md-@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/products/coffee_md-@2x.png);
+      background-image: url(../images/products/milkshakes_md-@2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/milkshakes_lg-@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/milkshakes_lg-@2x.png);
     }
   }
 }
