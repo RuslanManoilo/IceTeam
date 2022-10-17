@@ -173,30 +173,42 @@
   background-color: var(--accent-txt-cl);
   border: none;
 
+  transition: background-color var(--anim), color var(--anim);
+
   @media screen and (max-width: 767px) {
     margin-bottom: 16px;
   }
 }
 .contacts__btn--locations:hover {
-  background: #0a8817;
+  background: var(--bg-green-cl);
 }
 .contacts__btn--locations:focus {
-  background: #0a8817;
+  background: var(--bg-green-cl);
   color: var(--main-txt-cl);
 }
 
 .contacts__btn--franchise {
   background-color: transparent;
   border: 2px solid var(--accent-txt-cl);
+
+  transition: border var(--anim), color var(--anim);
 }
 .contacts__btn--franchise:hover {
-  border: 2px solid #0a8817;
+  border: 2px solid var(--bg-green-cl);
 }
 .contacts__btn--franchise:focus {
-  border: 2px solid #0a8817;
+  border: 2px solid var(--bg-green-cl);
   color: var(--main-txt-cl);
 }
 
 .contacts__icon {
-  fill: currentColor;
+  fill: transparent;
+  stroke: var(--dark-txt-cl);
+
+  transition: stroke var(--anim);
+}
+
+.contacts__btn--locations:focus .contacts__icon,
+.contacts__btn--franchise:focus .contacts__icon {
+  stroke: var(--main-txt-cl);
 }
