@@ -64,11 +64,31 @@
     &__btn{
         display: block;
         padding: 12 34;
+        color: #000000;
         background-color: var(--accent-txt-cl);
         border: none;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
+
+        transition: color var(--anim), background-color var(--anim);
+    }
+
+    &__btn-icon{
+        fill: currentColor;
+    }
+
+    &__btn:hover{
+        background-color: #0A8817;
+    }
+
+    &__btn:focus{
+        color: var(--main-txt-cl);
+        background-color: #0A8817;
+    }
+
+    &__btn:disabled{
+        background-color: var(--gray-txt-cl);
     }
 }
 
