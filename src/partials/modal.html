@@ -1,5 +1,10 @@
 <!-- buy now modal -->
+<<<<<<< Updated upstream
 <div class="modal" data-modal="1">
+=======
+<div class="modal container__buy-now" data-modal="1">
+    <div class="container container__buy-now">
+>>>>>>> Stashed changes
     <button data-modal-close type="button" class="modal__close-btn">
         <svg class="modal__close-icon" width="20" height="20">
         <use href="./images/sprite.svg#icon-close-cross"></use>
@@ -64,7 +69,13 @@
               type="text"
               required
               name="buy-now-name"
+<<<<<<< Updated upstream
             />           
+=======
+              placeholder="Name"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space."
+            />            
+>>>>>>> Stashed changes
           </label>
             <label class="buy-now__label">
             <span class="buy-now__title">Phone</span>
@@ -88,48 +99,59 @@
             Submit
           </button>
     </form>
+    </div>
 </div>
 <!-- ingradients modal -->
  <div class="modal" data-modal="2">
+    <div class="container container__ingradients">
     <button data-modal-close type="button" class="modal__close-btn">
         <svg class="modal__close-icon" width="20" height="20">
         <use href="./images/sprite.svg#icon-close-cross"></use>
         </svg>
     </button>
     <form class="ingradients__modal">
+<<<<<<< Updated upstream
         <strong class="buy-now__heading"
         >Chololate icecream</strong
         >
         <div class="thumb">
            <img   srcset="./images/modals/choco.jpg 1x,
                   ./images/modals/choco@2x.jpg 2x"
+=======
+        <strong class="ingradients__heading heading"
+        >Chololate icecream</strong
+        >
+        <div class="thumb">
+           <img class="goods-set__img"  srcset="./images/modals/choco.webp 1x,
+                  ./images/modals/choco@2x.webp 2x"
+>>>>>>> Stashed changes
                 sizes="132px"
                 src="./images/modals/choco.jpg"
                 alt="chocolate icecream"
-                width="132"
-                height="138">
+                width="131"
+                height="130">
         </div>
 
         <ul class="composition">
             <li class="composition__item">
                 <p class="composition__value">320</p>
-                <p class="composition__type">kcal</p>
+                <p class="composition__itembox"><span class="composition__title"> kcal</span></p>
             </li>
             <li class="composition__item">
                 <p class="composition__value">4g</p>
-                <p class="composition__type">Protein...</p>
+                <p class="composition__itembox"><span class="composition__title">Prote...</span></p>
             </li>
             <li class="composition__item">
                 <p class="composition__value">8,2g</p>
-                <p class="composition__type">Fats</p>
+                <p class="composition__itembox"><span class="composition__title">Fats</span> </p>
             </li>
             <li class="composition__item">
                 <p class="composition__value">40,4g</p>
-                <p class="composition__type">Carbs</p>
+                <p class="composition__itembox"><span class="composition__title">Carbs</span> </p>
             </li>
         </ul>
-        <p>Ingredients</p>
-        <ul class="ingradients__title">
+        <p class="ingradients__title">Ingredients</p>
+        <ul class="ingradients__list">
             <li class="ingradients__item">
                 <p class="ingradients__name">Milk</p>
                 <p class="ingradients__value">100ml</p>
@@ -155,37 +177,41 @@
                 <p class="ingradients__value">10g</p>
             </li>
         </ul>
-        <label class="buy-now__label">
-            <span class="buy-now__title">Name</span>
+       <label class="ingradients__label">
+            
             <input
-              class="buy-now__input"
+              class="ingradients__input"
               type="text"
               required
-              name="buy-now-name"
-            />           
+              name="ingradients-name "
+              placeholder="Name"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space."
+            />            
           </label>
-            <label class="buy-now__label">
-            <span class="buy-now__title">Phone</span>
+            <label class="ingradients__label">
+                
             <input
-              class="buy-now__input"
+              class="ingradients__input"
               type="tel"
               required
-              name="buy-now-phone"
+              name="ingradients-phone"
+              placeholder="Phone"
+              pattern="\+?[0-9\s\-\(\)]+" title="Userphone must include [0-9] numbers."
             />          
           </label>
-            <label class="buy-now__label">
-            <span class="buy-now__title">Comment</span>
+            <label class="ingradients__label ingradients__label--mb">
             <textarea
               class="buy-now__comment"
               name="buy-now-comment"
               rows="7"
-              placeholder="Enter text"
+              placeholder="Comment"
             ></textarea>
           </label>
-           <button class="buy-now__btn" type="submit">
+           <button class="ingradients__btn" type="submit">
             Submit
           </button>
     </form>
+    </div>
 </div>
 <!-- read more modal -->
   <div class="modal" data-modal="3">
