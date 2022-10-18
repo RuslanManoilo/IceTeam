@@ -6,7 +6,8 @@
     margin-right: auto;
 
     @media screen and (min-width:768px) {
-        padding: 74px 76px 204px;
+        padding-top: 74px;
+        padding-bottom: 204px;
     }
 
     @media screen and (min-width:1200px) {
@@ -15,13 +16,18 @@
     }
 
     &__list {
-        padding: 0 45px;
         text-align: center;
+
+        @media screen and (min-width:1200px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
 
         @media screen and (min-width:768px) {
             display: flex;
             gap: 80px;
-            padding: 0;
+            padding-left: 44px;
+            padding-right: 44px;
         }
 
         @media screen and (min-width:1200px) {
@@ -31,7 +37,7 @@
 
     &__item:not(:last-child) {
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:767px) {
             margin-bottom: 24px;
         }
     }
