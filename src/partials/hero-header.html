@@ -29,7 +29,6 @@
       </ul>
     </nav>
 
-    <!-- <span class="span-btn-header"> -->
     <button
       class="menu-btn js-open-menu"
       type="button"
@@ -115,6 +114,18 @@
 
       <div class="baner-box">
         <img
+          class="plate-img"
+          srcset="
+            ./images/hero/_plate-152.png 152w,
+            ./images/hero/_plate-225.png 225w,
+            ./images/hero/_plate-304.png 304w,
+            ./images/hero/_plate-450.png 450w
+          "
+          sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px"
+          src="./images/hero/_plate-152.png"
+          alt="table with ice cream"
+        />
+        <img
           class="baner-img"
           srcset="
             ./images/hero/plate-152.png 152w,
@@ -126,6 +137,7 @@
           src="./images/hero/plate-152.png"
           alt="table with ice cream"
         />
+
         <div class="baner-text-box">
           <p class="baner-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -136,6 +148,7 @@
               <use href="./images/sprite.svg#icon-arrow"></use>
             </svg>
           </a>
+          <p class="comment">With us the plate will never be empty !!!</p>
         </div>
       </div>
       <ul class="counter-list">

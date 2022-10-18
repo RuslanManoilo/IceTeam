@@ -198,6 +198,8 @@
   }
 }
 .baner-box {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   @media screen and (max-width: 767px) {
@@ -229,9 +231,44 @@
 }
 .arrows-link {
   position: absolute;
+  z-index: 10;
   fill: var(--main-txt-cl);
-  top: 100%;
+  top: 95%;
   left: 0;
+  @media screen and (min-width: 1200px) {
+    top: 100%;
+  }
+  transition: fill var(--anim);
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
+  }
+
+  &:hover + .comment,
+  &:focus + .comment {
+    opacity: 1;
+  }
+}
+
+.comment {
+  position: absolute;
+  top: 103%;
+  left: 30%;
+
+  font-weight: 700;
+  font-size: 9px;
+  width: 140px;
+  color: var(--accent-txt-cl);
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0;
+
+  transition: opacity var(--anim);
+  @media screen and (min-width: 1200px) {
+    font-size: 11px;
+    top: 110%;
+    width: 160px;
+  }
 }
 
 .counter {
@@ -443,5 +480,44 @@
   margin-top: auto;
   @media screen and (min-width: 768px) {
     display: none;
+  }
+}
+.plate-img {
+  z-index: 10;
+  transform: translateX(0);
+  animation-name: translate;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.baner-img {
+  position: absolute;
+  z-index: 10;
+  transform: translateX(-110%);
+  animation-name: translatex;
+  animation-duration: 4500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes translate {
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes translatex {
+  70% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
