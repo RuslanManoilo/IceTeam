@@ -61,12 +61,14 @@
   border-radius: 10px;
   border-color: transparent;
   transition: background-color var(--anim), color var(--anim);
+
   &:hover {
     background-color: #0a8817;
   }
+
   &:focus {
     color: var(--main-txt-cl);
-    background-color: #0a8817;
+    background-color: #0A8817;
   }
 }
 .btn-frame {
@@ -75,6 +77,12 @@
 
   fill: transparent;
   stroke: var(--dark-txt-cl);
+  transition: stroke var(--anim);
+}
+
+
+.btn-header:focus .btn-frame{
+  stroke: var(--main-txt-cl);
 }
 
 .btn-adaptive {
