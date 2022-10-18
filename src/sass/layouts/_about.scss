@@ -142,6 +142,7 @@
         margin-left: 5px;
         fill: transparent;
         stroke: var(--dark-txt-cl);
+        transition: stroke var(--anim);
         
     }
 
@@ -153,10 +154,10 @@
         color: var(--main-txt-cl);
         background-color: #0A8817;
     }
+}
 
-    &__btn:disabled{
-        background-color: var(--gray-txt-cl);
-    }
+.about__btn:focus .about__btn-icon {
+    stroke: var(--main-txt-cl);
 }
 
 .yellow-circle {
