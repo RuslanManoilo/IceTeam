@@ -11,16 +11,7 @@
   z-index: 20;
   transition: opacity var(--anim);
 }
-.container {
-  max-width: 280px;
-  @media screen and (min-width: 768px) {
-    max-width: 568px;
-  }
 
-  border-radius: 10px;
-  border: 2px solid var(--accent-txt-cl);
-  background-color: var(--light-cl);
-}
 
 .modal {
   opacity: 0;
@@ -39,6 +30,18 @@
   text-align: center;
   color: var(--dark-txt-cl);
   transition: transform var(--anim);
+
+  .container {
+      max-width: 280px;
+  
+      @media screen and (min-width: 768px) {
+        max-width: 568px;
+      }
+  
+      border-radius: 10px;
+      border: 2px solid var(--accent-txt-cl);
+      background-color: var(--light-cl);
+    }
 
   .modal__close-btn {
     position: absolute;
@@ -532,8 +535,8 @@
 }
 
 .modal.active {
-  transform: scale(1);
   visibility: visible;
+  opacity: 1;
 }
 .overlay.active {
   opacity: 1;
