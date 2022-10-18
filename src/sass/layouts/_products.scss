@@ -68,38 +68,55 @@
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 16px;
+    height: 548px;
   }
   @media screen and (min-width: 1200px) {
     gap: 32px;
+    height: 720px;
   }
 }
+
 .products__item {
   position: relative;
-  padding-top: 123px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
-  border-radius: 24px;
-  text-align: center;
+  @media screen and (min-width: 320px) {
+    width: 280px;
+  }
 
   @media screen and (max-width: 767px) {
+    height: 528px;
+
     &:not(:last-child) {
       margin-bottom: 56px;
     }
   }
-  @media screen and (min-width: 480px) {
-    width: 280px;
-  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 32px) / 3);
+    margin-top: auto;
+  }
+}
 
+.products__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 123px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 420px;
+
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
     padding-top: 108px;
     padding-left: 26px;
     padding-right: 26px;
-
-    border-radius: 16px;
+    height: 428px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -107,50 +124,50 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 64px) / 3);
-
     padding-top: 166px;
     padding-left: 62px;
     padding-right: 62px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+    height: 535px;
   }
 }
-.products__item--green {
+.products__wrap--green {
   background-color: #aec6a5;
 }
 
-.products__item--yellow {
+.products__wrap--yellow {
   background-color: #efd478;
 }
 
-.products__item--brown {
+.products__wrap--brown {
   background-color: var(--brown-cl);
 }
 
 .circl {
   position: absolute;
-  top: -30%;
-  left: 0;
+  top: -120px;
+  left: 12px;
 
   width: 200px;
   height: 210px;
+  border-radius: 50%;
 
-  @media screen and (max-width: 479px) {
-    width: 100%;
-    height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    left: 40px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 303px;
+    width: 302px;
     height: 316px;
+    top: -183px;
+    left: 34px;
   }
-  border-radius: 50%;
 }
 
 .circl--green {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url(../images/products/cream_sm-@1x.png);
 
   @media (min-device-pixel-ratio: 2),
@@ -180,9 +197,6 @@
 }
 
 .circl--yellow {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url(../images/products/coffee_sm-@1x.png);
 
   @media (min-device-pixel-ratio: 2),
@@ -212,9 +226,6 @@
 }
 
 .circl--brown {
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url(../images/products/milkshakes_sm-@1x.png);
 
   @media (min-device-pixel-ratio: 2),
@@ -269,8 +280,6 @@
 }
 
 .products__desc {
-  margin-bottom: 90px;
-
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
@@ -286,7 +295,9 @@
     line-height: calc(28 / 16);
   }
 }
+
 .open {
+  margin-top: auto;
   border: none;
   background-color: transparent;
 }
