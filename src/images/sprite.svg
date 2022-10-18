@@ -26,4 +26,7 @@
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 10h20M6 16h20M6 22h20"></path>
 </symbol>
+<symbol id="icon-close-cross" viewBox="0 0 32 32">
+<path d="m17.253 16 7.369-7.369a.886.886 0 0 0-.047-1.207.89.89 0 0 0-1.206-.047L16 14.746 8.631 7.368A.892.892 0 0 0 7.369 8.63l7.378 7.369-7.378 7.369a.891.891 0 0 0-.05 1.304.89.89 0 0 0 1.304-.051l7.378-7.369 7.369 7.369a.885.885 0 0 0 1.206-.047.89.89 0 0 0 .047-1.206l-7.369-7.369z"/>
+</symbol>
 </defs></svg>
