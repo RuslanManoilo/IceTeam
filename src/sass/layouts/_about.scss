@@ -1,20 +1,9 @@
 .about {
     background-color: var(--main-bg-cl);
     padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-left: 121px;
-        padding-right: 16px;
-    }
 
     &__label {
         font-weight: 700;
@@ -53,10 +42,6 @@
             display: flex;
         }
 
-        @media screen and (min-width: 768px) and (min-width: 768px){
-            justify-content:center ;
-            display: flex;
-        }
     }
 
     &__icon {
@@ -70,8 +55,6 @@
     &__text {
         line-height: 1.76;
         letter-spacing: 0.04em;
-        padding-left: 50px;
-        padding-right: 50px;
 
         @media screen and (max-width:767px) {
             text-align: center;
@@ -109,6 +92,11 @@
     }
 
     &__text-box {
+
+        @media screen and (max-width: 767px) {
+            padding-left: 30px;
+            padding-right: 30px;
+            }
 
         @media screen and (min-width:768px) {
             max-width: 334px;
@@ -174,8 +162,6 @@
 .yellow-circle {
     position: relative;
     display: block;
-    width: 278px;
-    height: 278px;
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     box-shadow: 0px 4.5px 16.8px rgba(153, 114, 23, 0.25);
     border-radius: 140px;
@@ -184,6 +170,8 @@
 
     @media screen and (max-width: 767px) {
         margin-bottom: 62px;
+        width: 278px;
+        height: 278px;
     }
 
     @media screen and (min-width: 768px) {
