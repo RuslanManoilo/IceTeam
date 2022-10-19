@@ -1,6 +1,17 @@
+// 73 64 49
+
 .header {
   background-color: var(--main-bg-cl);
-  @media screen and (min-width: 1200px) {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  padding-top: 12px;
+  padding-bottom: 5px;
+  @media screen and (min-width: 768px) {
     padding-top: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -67,7 +78,7 @@
 
   &:focus {
     color: var(--main-txt-cl);
-    background-color: #0A8817;
+    background-color: #0a8817;
   }
 }
 .btn-frame {
@@ -79,8 +90,7 @@
   transition: stroke var(--anim);
 }
 
-
-.btn-header:focus .btn-frame{
+.btn-header:focus .btn-frame {
   stroke: var(--main-txt-cl);
 }
 
@@ -96,17 +106,17 @@
 // Hero
 
 .section-hero {
-  padding-top: 61px;
+  padding-top: 61px + 54px;
   padding-bottom: 239px;
   background-color: var(--main-bg-cl);
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
+    padding-top: 40px + 68px;
     padding-bottom: 13px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 45px;
+    padding-top: 45px +78px;
     padding-bottom: 65px;
   }
 }
@@ -421,7 +431,7 @@
 .mobile-container {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
 
   top: 0;
   left: 0;
