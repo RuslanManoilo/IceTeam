@@ -60,6 +60,9 @@
 
 .btn-header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   padding: 12px 34px;
   font-weight: 600;
   font-size: 14px;
@@ -80,9 +83,6 @@
   }
 }
 .btn-frame {
-  display: block;
-  margin-left: 5px;
-
   fill: transparent;
   stroke: var(--dark-txt-cl);
   transition: stroke var(--anim);
