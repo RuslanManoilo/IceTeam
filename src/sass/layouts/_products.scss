@@ -295,5 +295,9 @@
   background-color: transparent;
 }
 .open:hover .feature__icon {
-  width: 50px;
+  transform: scale(1.4, 1);
+}
+
+.open:focus .feature__icon {
+  transform: scale(1.4, 1.2);
 }
