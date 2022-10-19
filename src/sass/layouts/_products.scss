@@ -289,11 +289,14 @@
   }
 }
 
-.open {
+.products__btn {
   margin-top: auto;
   border: none;
   background-color: transparent;
 }
-.open:hover .feature__icon {
-  width: 50px;
+.products__btn:hover .products__icon {
+  transform: scale(1.4, 1);
+}
+.products__btn:focus .products__icon {
+  transform: scale(1.4, 1.2);
 }
