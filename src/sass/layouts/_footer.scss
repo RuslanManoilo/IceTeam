@@ -17,18 +17,11 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-
     padding-bottom: 32px;
-    padding-left: 33px;
-    padding-right: 32px;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
     align-items: baseline;
     padding-bottom: 66px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
