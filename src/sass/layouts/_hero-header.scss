@@ -39,6 +39,7 @@
   line-height: calc(20 / 16);
   color: var(--main-txt-cl);
 
+  transition: color var(--anim);
   &:hover,
   &:focus {
     color: var(--accent-txt-cl);
@@ -60,6 +61,9 @@
 
 .btn-header {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   padding: 12px 34px;
   font-weight: 600;
   font-size: 14px;
@@ -69,7 +73,7 @@
   border-radius: 10px;
   border-color: transparent;
   transition: background-color var(--anim), color var(--anim);
-
+  cursor: pointer;
   &:hover {
     background-color: #0a8817;
   }
@@ -80,9 +84,6 @@
   }
 }
 .btn-frame {
-  display: block;
-  margin-left: 5px;
-
   fill: transparent;
   stroke: var(--dark-txt-cl);
   transition: stroke var(--anim);
@@ -356,8 +357,11 @@
 
 .blur {
   position: absolute;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
+    bottom: -280px;
+    left: 13%;
+  }
+  @media screen and (min-width: 480px) {
     bottom: -280px;
     left: 21%;
   }
@@ -372,8 +376,12 @@
 }
 .pic {
   position: absolute;
+  @media screen and (max-width: 479px) {
+    bottom: -239px;
+    left: 24%;
+  }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     bottom: -239px;
     left: 28%;
   }
@@ -559,5 +567,26 @@
 
   100% {
     transform: translateX(0);
+  }
+}
+
+.products__icon {
+  transition: transform var(--anim);
+}
+
+.link-up {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  position: fixed;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--dark-txt-cl);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+
+  &:hover .arrow-up {
+    transform: scale(1, 1.5);
   }
 }
