@@ -61,6 +61,12 @@
 
     border: none;
     background-color: var(--light-cl);
+
+      &:hover,
+      &:focus {
+        border: 1px solid var(--accent-txt-cl);
+        border-radius: 50%;
+      }
   }
 
   .heading {
