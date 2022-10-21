@@ -276,7 +276,7 @@
       <svg class="arrow-up" width="14" height="14">
         <use href="./images/sprite.svg#icon-arrow-up"></use>
       </svg>
-      go <br />up
+      up
     </a>
   </section>
 </main>
@@ -307,6 +307,16 @@
       mobileMenu.classList.remove('is-open');
       openMenuBtn.setAttribute('aria-expanded', false);
       bodyScrollLock.enableBodyScroll(document.body);
+    });
+
+    // При клике на ссылку навигации в мобильном меню закрываем мобильное меню
+    const closeMobileBtn = document.querySelectorAll('.modal-link');
+    closeMobileBtn.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        const menu = document.querySelector('#mobile-menu');
+        menu.classList.remove('is-open');
+        bodyScrollLock.enableBodyScroll(document.body);
+      });
     });
   })();
 </script>
